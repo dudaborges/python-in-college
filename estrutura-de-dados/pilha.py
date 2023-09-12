@@ -6,8 +6,11 @@ def empilhar():
     return pilha
 
 def desimpilhar():
-    pilha.pop()
-    return pilha
+    if len(pilha) != 0:
+        pilha.pop()
+        return pilha
+    else:
+        print("A pilha está vazia!")
 
 def limpar():
     pilha.clear()
@@ -39,8 +42,7 @@ def options(option):
 
 
 while option != 5:
-    option = int(input('insira a sua opção: '))
-    options(option)
+    print(f"\033[1;37;44m{" Pilhas ":=^50}\33[m")
     print('''
     [1] Empilhar
     [2] Desimpilhar
@@ -48,3 +50,5 @@ while option != 5:
     [4] Mostrar
     [5] Sair
     ''')
+    option = int(input('insira a sua opção: '))
+    options(option)

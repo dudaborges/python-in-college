@@ -13,7 +13,9 @@ print("Inserindo outro elemento: ", pilha)
 pilha.pop()
 print("Removendo o elemento do topo: ", pilha)
 
-print(pilha[-1])
-print(pilha[0])
+print("Elemento do topo: ", pilha[-1])
+print("Elemento do fundo: ", pilha[0])
+
+print(pilha.top())
 
 pilha.insert(0, 10)
