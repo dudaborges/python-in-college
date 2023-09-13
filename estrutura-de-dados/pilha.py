@@ -42,7 +42,7 @@ def options(option):
 
 
 while option != 5:
-    print(f"\033[1;37;44m{" Pilhas ":=^50}\33[m")
+    print(f'\033[1;37;44m{" Pilhas ":=^50}\33[m')
     print('''
     [1] Empilhar
     [2] Desimpilhar
